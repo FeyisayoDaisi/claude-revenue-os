@@ -1,0 +1,14 @@
+{
+  "name": "revenue-os",
+  "displayName": "Revenue OS",
+  "version": "1.0.0",
+  "description": "A governed Claude rollout for B2B revenue teams: a shared context layer, forecast integrity skills, a read-only scheduled brief and an approval gate on every CRM write.",
+  "author": {
+    "name": "Feyisayo Daisi",
+    "url": "https://github.com/FeyisayoDaisi"
+  },
+  "homepage": "https://github.com/FeyisayoDaisi/claude-revenue-os",
+  "repository": "https://github.com/FeyisayoDaisi/claude-revenue-os",
+  "license": "MIT",
+  "keywords": ["revops", "forecasting", "pipeline", "crm", "governance", "hubspot", "salesforce"]
+}

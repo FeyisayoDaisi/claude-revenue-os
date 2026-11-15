@@ -1,0 +1,72 @@
+{
+  "_about": "The team's revenue context layer. One source of truth for stages, exit criteria and forecast rules. Edit through a pull request, then ship it as a plugin update so every rep and every scheduled task reads the same rules.",
+  "version": "1.0.0",
+  "currency": "USD",
+  "stale_activity_days": 14,
+  "abandon_activity_days": 45,
+  "close_date_push_limit": 2,
+  "next_step_grace_days": 3,
+  "stages": [
+    {
+      "name": "Discovery",
+      "order": 1,
+      "probability": 0.10,
+      "max_days_in_stage": 21,
+      "exit_criteria": ["next_step"]
+    },
+    {
+      "name": "Qualified",
+      "order": 2,
+      "probability": 0.25,
+      "max_days_in_stage": 21,
+      "exit_criteria": ["next_step", "pain_identified", "budget_confirmed"]
+    },
+    {
+      "name": "Solution",
+      "order": 3,
+      "probability": 0.50,
+      "max_days_in_stage": 30,
+      "exit_criteria": ["next_step", "pain_identified", "budget_confirmed", "decision_maker_identified"]
+    },
+    {
+      "name": "Proposal",
+      "order": 4,
+      "probability": 0.70,
+      "max_days_in_stage": 21,
+      "exit_criteria": ["next_step", "pain_identified", "budget_confirmed", "decision_maker_identified", "proposal_sent"]
+    },
+    {
+      "name": "Negotiation",
+      "order": 5,
+      "probability": 0.85,
+      "max_days_in_stage": 14,
+      "exit_criteria": ["next_step", "pain_identified", "budget_confirmed", "decision_maker_identified", "proposal_sent", "paper_process_known"]
+    }
+  ],
+  "forecast_rules": {
+    "commit_min_stage_order": 4,
+    "commit_required_fields": ["decision_maker_identified", "budget_confirmed", "paper_process_known"],
+    "best_case_min_stage_order": 3
+  },
+  "field_map": {
+    "_about": "Map your CRM's property names to the engine's fields. Left side is the engine field, right side is the CRM property. HubSpot defaults shown.",
+    "deal_id": "hs_object_id",
+    "deal_name": "dealname",
+    "owner": "hubspot_owner_id",
+    "stage": "dealstage",
+    "amount": "amount",
+    "close_date": "closedate",
+    "created_date": "createdate",
+    "stage_entered_date": "hs_date_entered_<stage>",
+    "last_activity_date": "notes_last_contacted",
+    "forecast_category": "hs_manual_forecast_category",
+    "next_step": "hs_next_step",
+    "next_step_date": "next_step_date",
+    "close_date_push_count": "close_date_push_count",
+    "pain_identified": "pain_identified",
+    "budget_confirmed": "budget_confirmed",
+    "decision_maker_identified": "decision_maker_identified",
+    "proposal_sent": "proposal_sent",
+    "paper_process_known": "paper_process_known"
+  }
+}

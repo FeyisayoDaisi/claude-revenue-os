@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-16",
+  "deals": 57,
+  "verdict_accuracy": 0.93,
+  "flag_precision": 0.946,
+  "flag_recall": 0.946,
+  "false_positive_rate": 0.1,
+  "flag_confusion": {
+    "tp": 35,
+    "fp": 2,
+    "fn": 2,
+    "tn": 18
+  },
+  "per_verdict": {
+    "abandoned": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0
+    },
+    "mis_staged": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "stalled": {
+      "precision": 0.909,
+      "recall": 0.909,
+      "tp": 10,
+      "fp": 1,
+      "fn": 1
+    },
+    "at_risk": {
+      "precision": 0.923,
+      "recall": 0.923,
+      "tp": 12,
+      "fp": 1,
+      "fn": 1
+    },
+    "healthy": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "tp": 18,
+      "fp": 2,
+      "fn": 2
+    }
+  },
+  "misses": [
+    {
+      "deal_id": "D-1014",
+      "label": "stalled",
+      "engine": "healthy",
+      "judgement_call": true,
+      "why": "Activity is automated only, buyer silent for five weeks"
+    },
+    {
+      "deal_id": "D-1028",
+      "label": "healthy",
+      "engine": "stalled",
+      "judgement_call": true,
+      "why": "Long stage age is the buyer's known legal cycle, on schedule"
+    },
+    {
+      "deal_id": "D-1040",
+      "label": "at_risk",
+      "engine": "healthy",
+      "judgement_call": true,
+      "why": "Champion left; commit is not real until a new sponsor engages"
+    },
+    {
+      "deal_id": "D-1055",
+      "label": "healthy",
+      "engine": "at_risk",
+      "judgement_call": true,
+      "why": "Created yesterday; no next step yet is expected"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Revenue OS write gate: always ask before a CRM write tool runs, whatever the connector's own permission setting says.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__.*([Hh]ub[Ss]pot|[Ss]alesforce|[Pp]ipedrive|[Aa]ttio|[Zz]oho|[Dd]ynamics).*__(manage_crm_objects|[A-Za-z_-]*([Cc]reate|[Uu]pdate|[Dd]elete|[Uu]psert|[Mm]erge|[Ww]rite)[A-Za-z_-]*)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Revenue OS: this is a CRM write. Check the record, field, current value and new value before you approve. Stage, amount, close date and forecast category stay with the deal owner.\"}}'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

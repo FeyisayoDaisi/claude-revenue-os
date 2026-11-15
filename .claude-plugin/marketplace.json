@@ -1,0 +1,15 @@
+{
+  "name": "revenue-os",
+  "description": "Revenue OS: a governed Claude setup for B2B revenue teams, by Feyisayo Daisi.",
+  "owner": {
+    "name": "Feyisayo Daisi",
+    "url": "https://github.com/FeyisayoDaisi"
+  },
+  "plugins": [
+    {
+      "name": "revenue-os",
+      "source": "./plugins/revenue-os",
+      "description": "Forecast integrity, change proposals with an approval gate, and a read-only weekly brief, all reading one shared context layer."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+deal_id,deal_name,owner,stage,amount,created_date,stage_entered_date,close_date,last_activity_date,last_activity_type,forecast_category,next_step,next_step_date,close_date_push_count,notes,pain_identified,budget_confirmed,decision_maker_identified,proposal_sent,paper_process_known
+D-1000,Lakeshore Industrial Platform,Amara Obi,Qualified,120000,2026-09-11,2026-10-30,2026-11-26,2026-11-13,call,pipeline,,,0,,no,no,no,no,no
+D-1001,Northwind Logistics Platform,Daniel Reyes,Solution,85000,2026-09-06,2026-11-02,2027-01-14,2026-11-10,call,pipeline,Exec alignment call,2026-11-25,1,,yes,yes,no,no,no
+D-1002,Kestrel Health Platform,Priya Nair,Discovery,48000,2026-08-19,2026-11-02,2026-12-25,2026-11-13,call,pipeline,Demo with ops team,2026-11-17,0,,no,no,no,no,no
+D-1003,Bramble Foods Platform,Tom Becker,Proposal,36000,2026-10-04,2026-11-09,2026-11-29,2026-11-12,call,best_case,Pricing review,2026-11-22,1,,yes,yes,yes,no,no
+D-1004,Orion Freight Platform,Amara Obi,Qualified,60000,2026-07-26,2026-11-13,2027-01-15,2026-11-12,meeting,pipeline,Exec alignment call,2026-11-23,1,,no,no,no,no,no
+D-1005,Cobalt Analytics Platform,Daniel Reyes,Discovery,12000,2026-07-23,2026-11-05,2026-10-18,2026-08-26,call,pipeline,Demo with ops team,2026-10-15,0,,no,no,no,no,no
+D-1006,Harbor Legal Platform,Priya Nair,Proposal,12000,2026-09-24,2026-11-01,2026-10-20,2026-09-23,call,best_case,Technical validation,2026-09-27,1,,yes,yes,yes,no,no
+D-1007,Summit Payroll Platform,Tom Becker,Discovery,60000,2026-09-03,2026-11-13,2026-12-22,2026-11-10,call,pipeline,Exec alignment call,2026-11-20,1,,no,no,no,no,no
+D-1008,Meridian Labs Platform,Amara Obi,Solution,24000,2026-10-02,2026-10-29,2026-12-21,2026-11-13,email reply,pipeline,Send security pack,2026-11-21,1,,yes,yes,no,no,no
+D-1009,Quarry Systems Platform,Daniel Reyes,Discovery,85000,2026-09-03,2026-10-16,2027-01-10,2026-11-13,call,pipeline,Pricing review,2026-11-24,0,,no,no,no,no,no
+D-1010,Juniper Retail Platform,Priya Nair,Solution,12000,2026-07-21,2026-10-25,2026-11-08,2026-09-09,meeting,pipeline,Demo with ops team,2026-10-03,0,,yes,yes,no,no,no
+D-1011,Atlas Fleet Platform,Tom Becker,Negotiation,85000,2026-09-24,2026-11-14,2027-01-13,2026-11-13,meeting,best_case,Send security pack,2026-11-20,0,,yes,yes,yes,no,no
+D-1012,Beacon Insurance Platform,Amara Obi,Negotiation,24000,2026-09-09,2026-11-09,2027-01-28,2026-10-24,meeting,best_case,Send security pack,2026-11-03,0,,yes,yes,yes,yes,no
+D-1013,Cedar Clinics Platform,Daniel Reyes,Discovery,120000,2026-08-23,2026-10-28,2027-01-01,2026-11-15,meeting,pipeline,Pricing review,2026-11-17,0,,no,no,no,no,no
+D-1014,Delta Grain Platform,Priya Nair,Solution,36000,2026-07-31,2026-11-14,2026-12-24,2026-11-16,automated sequence email,pipeline,Pricing review,2026-11-26,0,Last human reply 5 weeks ago; only sequence emails since,yes,yes,no,no,no
+D-1015,Ember Energy Platform,Tom Becker,Discovery,48000,2026-08-15,2026-10-31,2027-01-08,2026-10-27,email reply,pipeline,Technical validation,2026-11-02,0,,no,no,no,no,no
+D-1016,Falcon Security Platform,Amara Obi,Qualified,36000,2026-08-07,2026-11-01,2027-01-24,2026-10-23,call,pipeline,Pricing review,2026-10-28,0,,no,no,no,no,no
+D-1017,Granite Works Platform,Daniel Reyes,Proposal,24000,2026-08-17,2026-11-05,2027-01-25,2026-11-13,email reply,best_case,Exec alignment call,2026-11-19,0,,no,yes,yes,no,no
+D-1018,Helix Bio Platform,Priya Nair,Proposal,60000,2026-07-21,2026-10-30,2026-11-26,2026-11-13,email reply,commit,Exec alignment call,2026-11-23,1,,yes,yes,yes,no,no
+D-1019,Ivory Hotels Platform,Tom Becker,Negotiation,12000,2026-09-24,2026-10-15,2026-12-22,2026-11-12,call,best_case,Demo with ops team,2026-11-20,1,,yes,yes,yes,yes,no
+D-1020,Lakeshore Industrial Expansion,Amara Obi,Solution,48000,2026-08-26,2026-09-18,2027-01-12,2026-11-11,meeting,pipeline,Demo with ops team,2026-11-22,0,,yes,yes,no,no,no
+D-1021,Northwind Logistics Expansion,Daniel Reyes,Discovery,12000,2026-07-20,2026-11-08,2027-01-09,2026-11-15,meeting,pipeline,Pricing review,2026-11-22,0,,no,no,no,no,no
+D-1022,Kestrel Health Expansion,Priya Nair,Proposal,60000,2026-07-31,2026-11-13,2027-01-13,2026-11-12,meeting,best_case,Demo with ops team,2026-11-19,0,,yes,yes,yes,no,no
+D-1023,Bramble Foods Expansion,Tom Becker,Discovery,12000,2026-09-03,2026-10-06,2026-12-31,2026-11-13,meeting,pipeline,Pricing review,2026-11-25,0,,no,no,no,no,no
+D-1024,Orion Freight Expansion,Amara Obi,Solution,120000,2026-08-15,2026-11-08,2026-12-16,2026-11-14,email reply,pipeline,Exec alignment call,2026-11-24,0,,yes,yes,no,no,no
+D-1025,Cobalt Analytics Expansion,Daniel Reyes,Proposal,120000,2026-09-23,2026-11-04,2026-12-02,2026-11-15,meeting,best_case,,,0,,yes,yes,yes,no,no
+D-1026,Harbor Legal Expansion,Priya Nair,Discovery,24000,2026-09-02,2026-11-02,2026-12-15,2026-11-14,meeting,pipeline,Technical validation,2026-11-21,0,,no,no,no,no,no
+D-1027,Summit Payroll Expansion,Tom Becker,Solution,48000,2026-07-31,2026-11-10,2026-12-07,2026-11-15,call,pipeline,Technical validation,2026-11-18,3,,yes,yes,no,no,no
+D-1028,Meridian Labs Expansion,Amara Obi,Negotiation,12000,2026-08-30,2026-10-21,2027-01-20,2026-11-13,call,commit,Send security pack,2026-11-23,0,"Customer legal review, standard 30 day cycle, redlines returned on schedule",yes,yes,yes,yes,yes
+D-1029,Quarry Systems Expansion,Daniel Reyes,Solution,12000,2026-08-23,2026-10-19,2027-01-13,2026-11-10,call,pipeline,Demo with ops team,2026-11-22,0,,yes,no,no,no,no
+D-1030,Juniper Retail Expansion,Priya Nair,Discovery,24000,2026-09-25,2026-10-31,2027-01-15,2026-11-16,meeting,pipeline,Demo with ops team,2026-11-23,0,,no,no,no,no,no
+D-1031,Atlas Fleet Expansion,Tom Becker,Discovery,60000,2026-08-20,2026-11-10,2027-01-11,2026-11-13,email reply,pipeline,Demo with ops team,2026-11-26,0,,no,no,no,no,no
+D-1032,Beacon Insurance Expansion,Amara Obi,Qualified,24000,2026-09-20,2026-11-09,2026-12-06,2026-11-15,meeting,pipeline,Technical validation,2026-11-21,0,,no,no,no,no,no
+D-1033,Cedar Clinics Expansion,Daniel Reyes,Proposal,48000,2026-08-21,2026-10-30,2027-01-23,2026-11-13,meeting,best_case,Technical validation,2026-11-17,0,,yes,no,yes,no,no
+D-1034,Delta Grain Expansion,Priya Nair,Proposal,24000,2026-08-23,2026-10-01,2027-01-07,2026-11-15,meeting,best_case,Send security pack,2026-11-26,1,,yes,yes,yes,no,no
+D-1035,Ember Energy Expansion,Tom Becker,Proposal,120000,2026-08-22,2026-11-02,2027-01-14,2026-11-16,call,commit,Send security pack,2026-11-22,1,,yes,yes,yes,no,no
+D-1036,Falcon Security Expansion,Amara Obi,Solution,36000,2026-07-30,2026-10-28,2026-12-25,2026-11-14,email reply,pipeline,Exec alignment call,2026-11-26,0,,yes,yes,no,no,no
+D-1037,Granite Works Expansion,Daniel Reyes,Qualified,85000,2026-10-05,2026-11-01,2026-12-22,2026-11-12,call,pipeline,,,0,,no,no,no,no,no
+D-1038,Helix Bio Expansion,Priya Nair,Negotiation,120000,2026-09-29,2026-11-06,2026-12-01,2026-11-14,email reply,best_case,Pricing review,2026-11-17,0,,yes,yes,no,yes,no
+D-1039,Ivory Hotels Expansion,Tom Becker,Solution,48000,2026-08-19,2026-10-25,2026-12-21,2026-11-15,email reply,pipeline,Send security pack,2026-11-17,4,,yes,yes,no,no,no
+D-1040,Lakeshore Industrial Renewal,Amara Obi,Negotiation,48000,2026-10-05,2026-11-06,2026-11-30,2026-11-12,email reply,commit,Technical validation,2026-11-26,1,"Champion left the company last week, new contact not engaged",yes,yes,yes,yes,yes
+D-1041,Northwind Logistics Renewal,Daniel Reyes,Proposal,48000,2026-08-01,2026-10-29,2026-12-09,2026-11-10,email reply,best_case,Exec alignment call,2026-11-18,4,,yes,yes,yes,no,no
+D-1042,Kestrel Health Renewal,Priya Nair,Negotiation,18000,2026-08-06,2026-11-12,2027-01-12,2026-10-23,email reply,best_case,Technical validation,2026-11-01,0,,yes,yes,yes,yes,no
+D-1043,Bramble Foods Renewal,Tom Becker,Proposal,85000,2026-09-24,2026-10-29,2026-12-16,2026-11-13,meeting,best_case,Technical validation,2026-11-22,4,,yes,yes,yes,no,no
+D-1044,Orion Freight Renewal,Amara Obi,Proposal,48000,2026-08-25,2026-11-13,2026-12-28,2026-11-11,call,commit,Pricing review,2026-11-22,0,,yes,yes,yes,no,no
+D-1045,Cobalt Analytics Renewal,Daniel Reyes,Qualified,12000,2026-09-26,2026-11-02,2027-01-01,2026-11-11,meeting,pipeline,Send security pack,2026-11-24,0,,no,no,no,no,no
+D-1046,Harbor Legal Renewal,Priya Nair,Qualified,48000,2026-09-28,2026-11-09,2027-01-09,2026-11-13,email reply,pipeline,,,1,,no,no,no,no,no
+D-1047,Summit Payroll Renewal,Tom Becker,Proposal,85000,2026-09-27,2026-11-05,2027-01-28,2026-11-16,meeting,best_case,Pricing review,2026-11-20,1,,yes,yes,yes,no,no
+D-1048,Meridian Labs Renewal,Amara Obi,Proposal,24000,2026-09-12,2026-11-10,2026-10-07,2026-09-13,email reply,best_case,Technical validation,2026-09-28,0,,yes,yes,yes,no,no
+D-1049,Quarry Systems Renewal,Daniel Reyes,Solution,85000,2026-09-06,2026-11-04,2026-12-30,2026-11-16,email reply,pipeline,Pricing review,2026-11-25,0,,yes,no,no,no,no
+D-1050,Juniper Retail Renewal,Priya Nair,Proposal,60000,2026-09-06,2026-10-28,2027-01-19,2026-11-16,call,commit,Technical validation,2026-11-25,1,,yes,yes,yes,no,no
+D-1051,Atlas Fleet Renewal,Tom Becker,Discovery,18000,2026-07-23,2026-10-30,2026-12-04,2026-10-20,call,pipeline,Pricing review,2026-10-29,1,,no,no,no,no,no
+D-1052,Beacon Insurance Renewal,Amara Obi,Proposal,12000,2026-07-19,2026-10-31,2026-12-15,2026-11-15,call,best_case,Pricing review,2026-11-17,0,,yes,yes,no,no,no
+D-1053,Cedar Clinics Renewal,Daniel Reyes,Proposal,12000,2026-08-08,2026-11-10,2026-12-01,2026-11-15,email reply,best_case,Exec alignment call,2026-11-21,1,,yes,yes,no,no,no
+D-1054,Delta Grain Renewal,Priya Nair,Qualified,18000,2026-09-18,2026-11-01,2026-10-19,2026-09-27,email reply,pipeline,Demo with ops team,2026-09-19,0,,no,no,no,no,no
+D-1055,Ember Energy Renewal,Tom Becker,Discovery,24000,2026-11-15,2026-11-15,2027-01-24,2026-11-11,call,pipeline,,,1,"Inbound yesterday, first call being booked",no,no,no,no,no
+D-1056,Falcon Security Renewal,Amara Obi,Qualified,48000,2026-09-08,2026-11-01,2027-01-15,2026-11-11,meeting,pipeline,Send security pack,2026-11-19,1,,no,no,no,no,no

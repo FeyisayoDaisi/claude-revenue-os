@@ -1,0 +1,10 @@
+{
+  "_about": "Merge into .claude/settings.json (project) or ~/.claude/settings.json (user) for Claude Code users. Claude Code applies its own allow/ask/deny rules, and connectors imported from claude.ai have been reported to ignore their per-tool approval toggles there. These ask rules make Claude Code prompt before CRM writes. Run /mcp to see the exact tool names in your session and add any that differ. Deny always wins over allow.",
+  "permissions": {
+    "ask": [
+      "mcp__claude_ai_HubSpot__manage_crm_objects",
+      "mcp__HubSpot__manage_crm_objects"
+    ],
+    "deny": []
+  }
+}

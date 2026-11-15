@@ -1,0 +1,58 @@
+deal_id,label,judgement_call,rationale
+D-1000,at_risk,False,No next step on an active deal
+D-1001,healthy,False,"Meets entry criteria, active, dated next step"
+D-1002,healthy,False,"Meets entry criteria, active, dated next step"
+D-1003,healthy,False,"Meets entry criteria, active, dated next step"
+D-1004,healthy,False,"Meets entry criteria, active, dated next step"
+D-1005,abandoned,False,No activity in 50+ days and the close date has passed
+D-1006,abandoned,False,No activity in 50+ days and the close date has passed
+D-1007,healthy,False,"Meets entry criteria, active, dated next step"
+D-1008,healthy,False,"Meets entry criteria, active, dated next step"
+D-1009,stalled,False,Stuck in Discovery past the stage age limit
+D-1010,abandoned,False,No activity in 50+ days and the close date has passed
+D-1011,mis_staged,False,Sits in Negotiation without proposal_sent
+D-1012,stalled,False,Gone dark: no activity in over two weeks
+D-1013,healthy,False,"Meets entry criteria, active, dated next step"
+D-1014,stalled,True,"Activity is automated only, buyer silent for five weeks"
+D-1015,stalled,False,Gone dark: no activity in over two weeks
+D-1016,stalled,False,Gone dark: no activity in over two weeks
+D-1017,mis_staged,False,Sits in Proposal without pain_identified
+D-1018,at_risk,False,Called commit without the paper process known
+D-1019,stalled,False,Stuck in Negotiation past the stage age limit
+D-1020,stalled,False,Stuck in Solution past the stage age limit
+D-1021,healthy,False,"Meets entry criteria, active, dated next step"
+D-1022,healthy,False,"Meets entry criteria, active, dated next step"
+D-1023,stalled,False,Stuck in Discovery past the stage age limit
+D-1024,healthy,False,"Meets entry criteria, active, dated next step"
+D-1025,at_risk,False,No next step on an active deal
+D-1026,healthy,False,"Meets entry criteria, active, dated next step"
+D-1027,at_risk,False,Close date pushed three or more times
+D-1028,healthy,True,"Long stage age is the buyer's known legal cycle, on schedule"
+D-1029,mis_staged,False,Sits in Solution without budget_confirmed
+D-1030,healthy,False,"Meets entry criteria, active, dated next step"
+D-1031,healthy,False,"Meets entry criteria, active, dated next step"
+D-1032,healthy,False,"Meets entry criteria, active, dated next step"
+D-1033,mis_staged,False,Sits in Proposal without budget_confirmed
+D-1034,stalled,False,Stuck in Proposal past the stage age limit
+D-1035,at_risk,False,Called commit without the paper process known
+D-1036,healthy,False,"Meets entry criteria, active, dated next step"
+D-1037,at_risk,False,No next step on an active deal
+D-1038,mis_staged,False,Sits in Negotiation without decision_maker_identified
+D-1039,at_risk,False,Close date pushed three or more times
+D-1040,at_risk,True,Champion left; commit is not real until a new sponsor engages
+D-1041,at_risk,False,Close date pushed three or more times
+D-1042,stalled,False,Gone dark: no activity in over two weeks
+D-1043,at_risk,False,Close date pushed three or more times
+D-1044,at_risk,False,Called commit without the paper process known
+D-1045,healthy,False,"Meets entry criteria, active, dated next step"
+D-1046,at_risk,False,No next step on an active deal
+D-1047,healthy,False,"Meets entry criteria, active, dated next step"
+D-1048,abandoned,False,No activity in 50+ days and the close date has passed
+D-1049,mis_staged,False,Sits in Solution without budget_confirmed
+D-1050,at_risk,False,Called commit without the paper process known
+D-1051,stalled,False,Gone dark: no activity in over two weeks
+D-1052,mis_staged,False,Sits in Proposal without decision_maker_identified
+D-1053,mis_staged,False,Sits in Proposal without decision_maker_identified
+D-1054,abandoned,False,No activity in 50+ days and the close date has passed
+D-1055,healthy,True,Created yesterday; no next step yet is expected
+D-1056,healthy,False,"Meets entry criteria, active, dated next step"

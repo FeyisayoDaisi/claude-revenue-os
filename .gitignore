@@ -1,0 +1,7 @@
+plugins/revenue-os/evals/results/
+__pycache__/
+*.pyc
+.DS_Store
+report.json
+deals.csv
+!plugins/revenue-os/evals/*/resources/deals.csv
