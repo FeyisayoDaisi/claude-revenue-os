@@ -33,7 +33,7 @@ Connector permissions can't limit a tool to one channel. The skill and the task 
 
 Check these after setup, after every plugin update and once a month:
 
-1. **Per-tool settings reset.** Users have reported Always allow and Needs approval reverting after a connector reconnects or a plugin updates. Open each CRM connector and confirm the write tools still say Needs approval.
+1. **Per-tool settings reset.** Treat Always allow and Needs approval as something to recheck after a connector reconnects or a plugin updates. Open each CRM connector and confirm the write tools still say Needs approval.
 2. **Enterprise roles seeded wide open.** When connector permissions are first turned on for an organization, existing custom roles start at "All connectors: Always allow". New roles start at Needs approval. Audit the existing roles.
-3. **Claude Code doesn't apply these settings.** Connectors imported into the Claude Code CLI from claude.ai have been reported to ignore per-tool approval toggles, so writes can run without a prompt. The plugin's hook (`hooks/hooks.json`) forces a prompt on CRM write tools, and `claude-code-settings.json` adds `ask` rules as a second layer.
-4. **Scheduled runs behave differently.** Claude Code's cloud scheduled tasks run with no approval prompts, and connector approvals in unattended runs have been inconsistent. Revenue OS's scheduled brief never writes to the CRM. Run it as a Claude scheduled task, not a Claude Code routine, and test it once with the write-block test in the rollout checklist.
+3. **Claude Code uses its own permission rules.** Don't rely on claude.ai's per-tool toggles alone in the Claude Code CLI. The plugin's hook (`hooks/hooks.json`) forces a prompt on CRM write tools, and `claude-code-settings.json` adds `ask` rules as a second layer.
+4. **Scheduled runs behave differently.** Claude Code's cloud scheduled tasks run with no approval prompts. Revenue OS's scheduled brief never writes to the CRM. Run it as a Claude scheduled task, not a Claude Code routine, and test it once with the write-block test in the rollout checklist.

@@ -111,8 +111,8 @@ Found while researching how Claude's plugins, connectors and scheduled tasks act
 | Burden | What Revenue OS does |
 |---|---|
 | Scheduled tasks run as one person, aren't shared, count against their usage, and plans cap runs | One RevOps-owned weekly brief, an optional mid-week check, personal rep versions only if wanted |
-| Unattended runs have no approval prompts, and connector approval behaviour in them has been inconsistent | Scheduled skills never write to the CRM. A write-block test is part of rollout |
-| Claude Code has been reported to ignore claude.ai per-tool approval settings | A hook forces an approval prompt on CRM write tools, plus `ask` rules for settings.json |
+| Unattended runs have no approval prompts, so nobody is there to approve a write | Scheduled skills never write to the CRM. A write-block test is part of rollout |
+| Claude Code applies its own permission rules, separate from claude.ai's per-tool settings | A hook forces an approval prompt on CRM write tools, plus `ask` rules for settings.json |
 | Per-tool permissions can reset after updates; Enterprise roles can start wide open | Permission matrix with a drift checklist after every update |
 | Hooks only run in Cowork and Claude Code, not chat | The controls that matter live in the skills; the hook is a backstop |
 | Plugins with `bin/` won't install on claude.ai; `claude-` plugin names are reserved | No `bin/`, plugin named `revenue-os`, both enforced in tests |

@@ -27,9 +27,9 @@ Each finding below changed the design.
 |---|---|---|
 | 1 | Scheduled tasks belong to one account. They run as that person, use their connectors, count against their usage and aren't shared with teammates. | One RevOps owner runs the team brief. Reps can add a personal version. Documented in `scheduled-tasks.md`. |
 | 2 | Plans cap scheduled runs. Users have reported limits on daily cloud scheduled sessions, undocumented per tier at the time. | Right-sized schedule: one weekly brief, one optional mid-week check. |
-| 3 | Claude Code's cloud scheduled tasks run with no approval prompts. Connector approvals in unattended runs have been inconsistent, with some runs blocking every connector call and others allowing writes. | Scheduled skills are read-only by design. Writes only happen in a live session through `change-proposal`. The rollout checklist includes a write-block test. |
-| 4 | The Claude Code CLI has been reported to ignore claude.ai per-tool "approval required" settings for imported connectors, so writes can run silently. | A plugin hook forces an approval prompt on CRM write tools by regex, plus `ask` rules in `claude-code-settings.json`. |
-| 5 | Per-tool connector permissions have been reported to reset after reconnects or plugin updates. On Enterprise, existing custom roles are seeded at "All connectors: Always allow" when connector permissions are first enabled. | The permission matrix includes a drift checklist: recheck after every update and monthly. |
+| 3 | Claude Code's cloud scheduled tasks run with no approval prompts, so nobody is there to approve a write during a run. | Scheduled skills are read-only by design. Writes only happen in a live session through `change-proposal`. The rollout checklist includes a write-block test. |
+| 4 | Claude Code applies its own permission rules, so claude.ai's per-tool approval settings shouldn't be relied on alone there. | A plugin hook forces an approval prompt on CRM write tools by regex, plus `ask` rules in `claude-code-settings.json`. |
+| 5 | Connector permissions need rechecking after reconnects and plugin updates. On Enterprise, existing custom roles start at "All connectors: Always allow" when connector permissions are first enabled. | The permission matrix includes a drift checklist: recheck after every update and monthly. |
 | 6 | Hooks and subagents run in Cowork, not in chat. Skills work across chat, Cowork and Claude Code. | All logic lives in skills. The hook is a backstop, not the main control. |
 | 7 | claude.ai and Cowork refuse plugins with a top-level `bin/` directory. Plugin names starting with `claude-` are reserved. | No `bin/`. Plugin named `revenue-os`. Both enforced by tests. |
 | 8 | Scheduled tasks can't read a folder on someone's computer. | The context layer ships inside the plugin, so every run, attended or not, reads the same rules. |
@@ -56,9 +56,6 @@ Each finding below changed the design.
 - [Claude Code docs: routines](https://code.claude.com/docs/en/routines.md)
 - [Claude Help Center: schedule recurring tasks](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork)
 - [GitHub issue 40124: scheduled task limits undocumented](https://github.com/anthropics/claude-code/issues/40124)
-- [Issue 61015: scheduled routines fail MCP calls with "requires approval"](https://claudeissues.com/issue/61015-bug-scheduled-routines-fail-every-mcp-tool-call-with-mcp-tool-call-requires-appr)
-- [Issue 64521: Claude Code CLI does not honor connector approval settings](https://claudeissues.com/issue/64521-claude-code-cli-does-not-honor-claude-ai-mcp-connector-approval-required-setting)
-- [Issue 82532: connector per-tool permissions reset](https://claudeissues.com/issue/82532-connector-per-tool-permissions-still-reset-root-cause-is-server-identity-rotatio)
 - [Claude Help Center: role-based connector permissions](https://support.claude.com/en/articles/13930458)
 - [Anthropic Academy: deploying Claude Enterprise, connectors](https://academy.claude.com/courses/deploying-claude-enterprise-with-confidence/connectors)
 - [Claude docs: plugins overview](https://claude.com/docs/plugins/overview)
